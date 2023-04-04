@@ -3,25 +3,17 @@ package Entity;
 public class Department {
 
 
-    private int id;
+  
     private String name;
     private String description;
 
     public Department() {
     }
 
-    public Department(int id, String name, String description) {
-        this.id = id;
+    public Department( String name, String description) {
+        
         this.name = name;
         this.description = description;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -42,7 +34,7 @@ public class Department {
 
     @Override
     public String toString() {
-        return "Department{" + "id=" + id + ", name=" + name + ", description=" + description + '}';
+        return "Department{" +  ", name=" + name + ", description=" + description + '}';
     }
 
     
